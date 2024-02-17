@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gestion_trains xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="gestion_train.xsd">
+    <admins>
+        <admin username="admin">
+            <password>admin</password>
+        </admin>
+    </admins>
+    <utilisateurs>
+        <utilisateur username="fadelabdelhamid">
+            <password>fadel69420</password>
+            <nom>Fadel</nom>
+            <prenom>Abdelhamid</prenom>
+            <cin>M623182</cin>
+        </utilisateur>
+        <utilisateur username="user69">
+            <password>pwdpwdpwd</password>
+            <nom>John </nom>
+            <prenom>Smith</prenom>
+            <cin>D2020205</cin>
+        </utilisateur>
+    </utilisateurs>
+    <classes>
+        <classe id_classe="A">
+            <nom_classe>Classe A</nom_classe>
+        </classe>
+        <classe id_classe="B">
+            <nom_classe>Classe B</nom_classe>
+        </classe>
+    </classes>
+    <gares>
+        <gare id_gare="g001">
+            <nom_gare>Gare de Safi</nom_gare>
+            <ville>Safi</ville>
+        </gare>
+        <gare id_gare="g002">
+            <nom_gare>Gare d'El Jadida</nom_gare>
+            <ville>El Jadida</ville>
+        </gare>
+        <gare id_gare="g003">
+            <nom_gare>Casa Voyageurs</nom_gare>
+            <ville>Casablanca</ville>
+        </gare>
+        <gare id_gare="g004">
+            <nom_gare>Gare de Fes</nom_gare>
+            <ville>Fes</ville>
+        </gare>
+    <gare id_gare="g106585467065"><nom_gare/><ville>Rabat</ville></gare></gares>
+    <voyages>
+        <voyage id_voyage="v001" gare_depart="g001" gare_arrive="g003" id_classe="A">
+            <date_dep>01-03-2024</date_dep>
+            <heure_dep>08:00</heure_dep>
+            <num_train>01</num_train>
+            <prix>70.00</prix>
+        </voyage>
+        <voyage id_voyage="v002" gare_depart="g001" gare_arrive="g003" id_classe="B">
+            <date_dep>01-03-2024</date_dep>
+            <heure_dep>10:00</heure_dep>
+            <num_train>02</num_train>
+            <prix>60.00</prix>
+        </voyage>
+        <voyage id_voyage="v003" gare_depart="g001" gare_arrive="g003" id_classe="A">
+            <date_dep>01-03-2024</date_dep>
+            <heure_dep>12:00</heure_dep>
+            <num_train>03</num_train>
+            <prix>70.00</prix>
+        </voyage>
+        <voyage id_voyage="v004" gare_depart="g001" gare_arrive="g003" id_classe="B">
+            <date_dep>01-03-2024</date_dep>
+            <heure_dep>14:00</heure_dep>
+            <num_train>04</num_train>
+            <prix>60.00</prix>
+        </voyage>
+        <voyage id_voyage="v005" gare_depart="g001" gare_arrive="g003" id_classe="A">
+            <date_dep>01-03-2024</date_dep>
+            <heure_dep>16:00</heure_dep>
+            <num_train>05</num_train>
+            <prix>70.00</prix>
+        </voyage>
+        <voyage id_voyage="v006" gare_depart="g001" gare_arrive="g003" id_classe="B">
+            <date_dep>01-03-2024</date_dep>
+            <heure_dep>18:00</heure_dep>
+            <num_train>06</num_train>
+            <prix>60.00</prix>
+        </voyage>
+        <voyage id_voyage="v007" gare_depart="g001" gare_arrive="g002" id_classe="A">
+            <date_dep>01-03-2024</date_dep>
+            <heure_dep>08:00</heure_dep>
+            <num_train>01</num_train>
+            <prix>50.00</prix>
+        </voyage>
+        <voyage id_voyage="v008" gare_depart="g001" gare_arrive="g002" id_classe="B">
+            <date_dep>01-03-2024</date_dep>
+            <heure_dep>10:00</heure_dep>
+            <num_train>02</num_train>
+            <prix>40.00</prix>
+        </voyage>
+        <voyage id_voyage="v009" gare_depart="g001" gare_arrive="g002" id_classe="A">
+            <date_dep>01-03-2024</date_dep>
+            <heure_dep>12:00</heure_dep>
+            <num_train>03</num_train>
+            <prix>50.00</prix>
+        </voyage>
+        <voyage id_voyage="v010" gare_depart="g001" gare_arrive="g002" id_classe="B">
+            <date_dep>01-03-2024</date_dep>
+            <heure_dep>14:00</heure_dep>
+            <num_train>04</num_train>
+            <prix>40.00</prix>
+        </voyage>
+        <voyage id_voyage="v011" gare_depart="g001" gare_arrive="g002" id_classe="A">
+            <date_dep>01-03-2024</date_dep>
+            <heure_dep>16:00</heure_dep>
+            <num_train>05</num_train>
+            <prix>50.00</prix>
+        </voyage>
+        <voyage id_voyage="v012" gare_depart="g001" gare_arrive="g002" id_classe="B">
+            <date_dep>01-03-2024</date_dep>
+            <heure_dep>18:00</heure_dep>
+            <num_train>06</num_train>
+            <prix>40.00</prix>
+        </voyage>
+        <voyage id_voyage="v013" gare_depart="g001" gare_arrive="g002" id_classe="B">
+            <date_dep>01-03-2024</date_dep>
+            <heure_dep>18:00</heure_dep>
+            <num_train>06</num_train>
+            <prix>40.00</prix>
+        </voyage>
+        <voyage id_voyage="v014" gare_depart="g004" gare_arrive="g002" id_classe="B">
+            <date_dep>01-03-2024</date_dep>
+            <heure_dep>18:00</heure_dep>
+            <num_train>06</num_train>
+            <prix>40.00</prix>
+        </voyage>
+    <voyage id_voyage="v57095358765" gare_depart="g004" gare_arrive="g001" id_classe="2"><date_dep>01-03-2024</date_dep><heure_dep>10:00</heure_dep><num_train>06</num_train><prix>40.00</prix></voyage></voyages>
+    <tickets>
+        <ticket id_ticket="t002" username="fadelabdelhamid" id_voyage="v011"/>
+        <ticket id_ticket="t746728869601565" username="fadelabdelhamid" id_voyage="v001"/>
+        <ticket id_ticket="t176281835160158" username="fadelabdelhamid" id_voyage="v008"/>
+        <ticket id_ticket="t155366570465" username="fadelabdelhamid" id_voyage="v013"/>
+        <ticket id_ticket="t43593560765" username="fadelabdelhamid" id_voyage="v014"/>
+    <ticket id_ticket="t136256975465" username="fadelabdelhamid" id_voyage="v57095358765"/><ticket id_ticket="t125757114265" username="fadelabdelhamid" id_voyage="v014"/><ticket id_ticket="t214707108665" username="fadelabdelhamid" id_voyage="v014"/></tickets>
+</gestion_trains>

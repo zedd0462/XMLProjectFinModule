@@ -1,0 +1,142 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="gestion_trains">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="admins"/>
+        <xs:element ref="utilisateurs"/>
+        <xs:element ref="classes"/>
+        <xs:element ref="gares"/>
+        <xs:element ref="voyages"/>
+        <xs:element ref="tickets"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="utilisateurs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="utilisateur" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="voyages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="voyage" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="classes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="classe" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="gares">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="gare" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="tickets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ticket" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="utilisateur">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="password"/>
+        <xs:element ref="nom"/>
+        <xs:element ref="prenom"/>
+        <xs:element ref="cin"/>
+      </xs:sequence>
+      <xs:attribute name="username" type="xs:ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="password" type="xs:string"/>
+  <xs:element name="nom" type="xs:string"/>
+  <xs:element name="prenom" type="xs:string"/>
+  <xs:element name="cin" type="xs:string"/>
+
+  <xs:element name="voyage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="date_dep"/>
+        <xs:element ref="heure_dep"/>
+        <xs:element ref="num_train"/>
+        <xs:element ref="prix"/>
+      </xs:sequence>
+      <xs:attribute name="id_voyage" type="xs:ID" use="required"/>
+      <xs:attribute name="gare_depart" type="xs:IDREF" use="required"/>
+      <xs:attribute name="gare_arrive" type="xs:IDREF" use="required"/>
+      <xs:attribute name="id_classe" type="xs:IDREF" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="date_dep" type="xs:string"/>
+  <xs:element name="heure_dep" type="xs:string"/>
+  <xs:element name="num_train" type="xs:string"/>
+  <xs:element name="prix" type="xs:string"/>
+
+  <xs:element name="classe">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nom_classe"/>
+      </xs:sequence>
+      <xs:attribute name="id_classe" type="xs:ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="nom_classe" type="xs:string"/>
+
+  <xs:element name="gare">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nom_gare"/>
+        <xs:element ref="ville"/>
+      </xs:sequence>
+      <xs:attribute name="id_gare" type="xs:ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="nom_gare" type="xs:string"/>
+  <xs:element name="ville" type="xs:string"/>
+
+  <xs:element name="ticket">
+    <xs:complexType>
+      <xs:attribute name="id_ticket" type="xs:ID" use="required"/>
+      <xs:attribute name="username" type="xs:IDREF" use="required"/>
+      <xs:attribute name="id_voyage" type="xs:IDREF" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="admins">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="admin" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="admin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="password"/>
+      </xs:sequence>
+      <xs:attribute name="username" type="xs:ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

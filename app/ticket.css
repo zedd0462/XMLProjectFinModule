@@ -1,0 +1,79 @@
+
+html,body {
+    overflow: hidden;
+    height:100%;
+    width: 100%;
+    font-family: 'Trebuchet MS';
+}
+.ticketContainer{
+    overflow: hidden;
+    height: 300px;
+    width:  700px;
+    border: 1px solid black;
+    display: flex;
+    border-radius: 7px;
+    box-shadow: 0px 0px 40px #888888;
+    margin: 20px;
+}
+.leftContainer{
+    overflow: hidden;
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid black;
+}
+.rightContainer{
+    overflow: hidden;
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #015279;
+}
+.qrContainer{
+    overflow: hidden;
+    height : 70%;
+    width : 100%;
+    background-color:  #ED8E2A;
+}
+.idContainer{
+    overflow: hidden;
+    height : 30%;
+    width : 100%;
+    background-color: #F8D648;
+    color : #015279;
+    
+}
+.imgContainer{
+    overflow: hidden;
+    height: 80%;
+    width: 80%;
+    margin : 10%;
+}
+.ticketID{
+    overflow: hidden;
+    height: 50%;
+    width: 80%;
+    margin: 10%;
+    text-align: center;
+}
+.infoContainer{
+    overflow : hidden;
+    height: 200px;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom : 50px;
+    margin-left : 10%;
+    margin-right : 10%;
+    color: #F8D648;
+    text-align: left;
+    font-weight: 600;
+
+}
+.infoHeader{
+    display: inline;
+    font-size: x-large;
+    font-weight: 800;
+    color: #F8D648;
+}
+.infoData{
+    font-weight: 300;
+}
